@@ -1,7 +1,7 @@
 ## 31-EDO Keyboard
 A musical keyboard with 31 keys per octave
 
-Run it at https://girapet.github.io/31edo
+Run it at https://girapet.github.io/31edo/index.html
 
 See the [31 Tone Equal Temperament](https://31et.com/) website for details on this tuning
 
