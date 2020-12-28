@@ -131,6 +131,7 @@ window.addEventListener('load', () => {
 
   const damperRelease = () => {
     damper = false;
+    $damperTouch.classList.remove('press');
     
     for (let n = 0; n <= 24; n++) {
       stop(n);
@@ -138,7 +139,10 @@ window.addEventListener('load', () => {
   };
 
   if (isTouch) {
-    $damperTouch.addEventListener('touchstart', () => { damper = true; });
+    $damperTouch.addEventListener('touchstart', () => { 
+      damper = true;
+      $damperTouch.classList.add('press');
+    });
     $damperTouch.addEventListener('touchcancel', damperRelease);
     $damperTouch.addEventListener('touchend', damperRelease);
   }
