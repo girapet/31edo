@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="css/12edo.css">
+  <title>12-EDO Keyboard</title>
+</head>
+<body>
+  <h2>12-EDO Keyboard</h2>
+  <div class="loader">
+    <button type="button" id="start">Click to start</button>
+    <span id="loading" style="display: none">
+      <label for="progress">loading piano samples</label>
+      <progress id="progress" value="0" max="25"></progress>
+    </span>
+    <span style="display: none" id="ready">ready</span>
+  </div>
+  <div class="keyboard">
+    <div class="ivory" id="note0">
+      <label>C</label>
+      <div class="ebony" id="note1">
+        <label>C♯<br/>D♭</label>        
+      </div>
+    </div><div class="ivory" id="note2">
+      <label>D</label>
+      <div class="ebony" id="note3">
+        <label>D♯<br/>E♭</label>        
+      </div>
+    </div><div class="ivory" id="note4">
+      <label>E</label>
+    </div><div class="ivory" id="note5">
+      <label>F</label>
+      <div class="ebony" id="note6">
+        <label>F♯<br/>G♭</label>        
+      </div>
+    </div><div class="ivory" id="note7">
+      <label>G</label>
+      <div class="ebony" id="note8">
+        <label>G♯<br/>A♭</label>        
+      </div>
+    </div><div class="ivory" id="note9">
+      <label>A</label>
+      <div class="ebony" id="note10">
+        <label>A♯<br/>B♭</label>        
+      </div>
+    </div><div class="ivory" id="note11">
+      <label>B</label>
+    </div><div class="ivory" id="note12">
+      <label>C</label>
+      <div class="ebony" id="note13">
+        <label>C♯<br/>D♭</label>        
+      </div>
+    </div><div class="ivory" id="note14">
+      <label>D</label>
+      <div class="ebony" id="note15">
+        <label>D♯<br/>E♭</label>        
+      </div>
+    </div><div class="ivory" id="note16">
+      <label>E</label>
+    </div><div class="ivory" id="note17">
+      <label>F</label>
+      <div class="ebony" id="note18">
+        <label>F♯<br/>G♭</label>        
+      </div>
+    </div><div class="ivory" id="note19">
+      <label>G</label>
+      <div class="ebony" id="note20">
+        <label>G♯<br/>A♭</label>        
+      </div>
+    </div><div class="ivory" id="note21">
+      <label>A</label>
+      <div class="ebony" id="note22">
+        <label>A♯<br/>B♭</label>        
+      </div>
+    </div><div class="ivory" id="note23">
+      <label>B</label>
+    </div><div class="ivory" id="note24">
+      <label>C</label>
+    </div>
+  </div>
+  <div id="damper">
+    <div id="damper-key">
+      Press the Shift key for sustain (damper pedal)
+    </div>
+    <button type="button" id="damper-touch">Sustain (damper pedal)</button>
+  </div>
+  <div id="credits">
+    Piano samples courtesy of the 
+    <a href="http://theremin.music.uiowa.edu/MISpiano.html">University of Iowa Electronic Music Studios</a> 
+  </div>
+</body>
+
+<script src="js/12edo.js"></script>
+</html>

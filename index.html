@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="css/index.css">
+  <title>31-EDO Keyboard</title>
+</head>
+<body>
+  <h2>31-EDO Keyboard</h2>
+  <div class="loader">
+    <button type="button" id="start">Click to start</button>
+    <span id="loading" style="display: none">
+      <label for="progress">loading piano samples</label>
+      <progress id="progress" value="0" max="25"></progress>
+    </span>
+    <span style="display: none" id="ready">ready</span>
+  </div>
+  <div class="keyboard">
+    <div class="ivory" id="note0">
+      <label><span class="note">C</span></label>
+      <div class="purpleheart right" id="note1">
+        <label><span class="note">C</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note2">
+          <label><span class="note">C</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note5">
+      <label><span class="note">D</span></label>
+      <div class="purpleheart left" id="note4">
+        <label><span class="note">D</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note3">
+          <label><span class="note">D</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note6">
+        <label><span class="note">D</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note7">
+          <label><span class="note">D</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note10">
+      <label><span class="note">E</span></label>
+      <div class="purpleheart left" id="note9">
+        <label><span class="note">E</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note8">
+          <label><span class="note">E</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note11">
+        <label><span class="note">E</span><span class="ssh"></span></label>
+      </div>
+    </div><div class="ivory" id="note13">
+      <label><span class="note">F</span></label>
+      <div class="purpleheart left" id="note12">
+        <label><span class="note">F</span><span class="sfl"></span></label>
+      </div>
+      <div class="purpleheart right" id="note14">
+        <label><span class="note">F</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note15">
+          <label><span class="note">F</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note18">
+      <label><span class="note">G</span></label>
+      <div class="purpleheart left" id="note17">
+        <label><span class="note">G</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note16">
+          <label><span class="note">G</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note19">
+        <label><span class="note">G</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note20">
+          <label><span class="note">G</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note23">
+      <label><span class="note">A</span></label>
+      <div class="purpleheart left" id="note22">
+        <label><span class="note">A</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note21">
+          <label><span class="note">A</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note24">
+        <label><span class="note">A</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note25">
+          <label><span class="note">A</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note28">
+      <label><span class="note">B</span></label>
+      <div class="purpleheart left" id="note27">
+        <label><span class="note">B</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note26">
+          <label><span class="note">B</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note29">
+        <label><span class="note">B</span><span class="ssh"></span></label>
+      </div>
+    </div><div class="ivory" id="note31">
+      <label><span class="note">C</span></label>
+      <div class="purpleheart left" id="note30">
+        <label><span class="note">C</span><span class="sfl"></span></label>
+      </div>
+      <div class="purpleheart right" id="note32">
+        <label><span class="note">C</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note33">
+          <label><span class="note">C</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note36">
+      <label><span class="note">D</span></label>
+      <div class="purpleheart left" id="note35">
+        <label><span class="note">D</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note34">
+          <label><span class="note">D</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note37">
+        <label><span class="note">D</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note38">
+          <label><span class="note">D</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note41">
+      <label><span class="note">E</span></label>
+      <div class="purpleheart left" id="note40">
+        <label><span class="note">E</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note39">
+          <label><span class="note">E</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note42">
+        <label><span class="note">E</span><span class="ssh"></span></label>
+      </div>
+    </div><div class="ivory" id="note44">
+      <label><span class="note">F</span></label>
+      <div class="purpleheart left" id="note43">
+        <label><span class="note">F</span><span class="sfl"></span></label>
+      </div>
+      <div class="purpleheart right" id="note45">
+        <label><span class="note">F</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note46">
+          <label><span class="note">F</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note49">
+      <label><span class="note">G</span></label>
+      <div class="purpleheart left" id="note48">
+        <label><span class="note">G</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note47">
+          <label><span class="note">G</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note50">
+        <label><span class="note">G</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note51">
+          <label><span class="note">G</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note54">
+      <label><span class="note">A</span></label>
+      <div class="purpleheart left" id="note53">
+        <label><span class="note">A</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note52">
+          <label><span class="note">A</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note55">
+        <label><span class="note">A</span><span class="ssh"></span></label>
+        <div class="ebony right" id="note56">
+          <label><span class="note">A</span><span class="sh"></span></label>
+        </div>
+      </div>
+    </div><div class="ivory" id="note59">
+      <label><span class="note">B</span></label>
+      <div class="purpleheart left" id="note58">
+        <label><span class="note">B</span><span class="sfl"></span></label>
+        <div class="ebony left" id="note57">
+          <label><span class="note">B</span><span class="fl"></span></label>
+        </div>
+      </div>
+      <div class="purpleheart right" id="note60">
+        <label><span class="note">B</span><span class="ssh"></span></label>
+      </div>
+    </div><div class="ivory" id="note62">
+      <label><span class="note">C</span></label>
+      <div class="purpleheart left" id="note61">
+        <label><span class="note">C</span><span class="sfl"></span></label>
+      </div>
+    </div>
+  </div>
+  <div id="damper">
+    <div id="damper-key">
+      Press the Shift key for sustain (damper pedal)
+    </div>
+    <button type="button" id="damper-touch">Sustain (damper pedal)</button>
+  </div>
+  <div id="credits">
+    Piano samples courtesy of the 
+    <a href="http://theremin.music.uiowa.edu/MISpiano.html">University of Iowa Electronic Music Studios</a> 
+  </div>
+</body>
+
+<script src="js/index.js"></script>
+</html>
